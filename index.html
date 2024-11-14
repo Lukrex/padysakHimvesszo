@@ -1,48 +1,82 @@
-<DOCTYPE! html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>PADYSAK??</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PADYSAK??</title>
+  <style>
 
-html, body {
-  margin: 0; padding: 0;
-}
-.shaper {
-  background: gray url(krasa.jpg) repeat 0 0;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  height: 100%;
-  padding-top: 120px;
-  box-sizing: border-box;
-  -webkit-animation: slide 300s linear infinite;
-}
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
-.shaper h1 {
-  font-family: sans-serif;
-  font-size: 80px;
-  color: white;
-}
+    .shaper {
+      background: gray url(krasa.jpg) repeat 0 0;
+      width: 100%;
+      margin: 0;
+      text-align: center;
+      height: 100%;
+      padding-top: 120px;
+      box-sizing: border-box;
+      -webkit-animation: slide 300s linear infinite;
+    }
 
-.shaper h2 {
-  font-family: sans-serif;
-  font-size: 40px;
-  color: white;
-}
+    .shaper h1 {
+      font-family: sans-serif;
+      font-size: 80px;
+      color: white;
+    }
 
-@-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -10000px -10000px; }
-}
+    .shaper h2 {
+      font-family: sans-serif;
+      font-size: 40px;
+      color: white;
+    }
 
-</style>
+    .scrolling-lyrics {
+      font-family: sans-serif;
+      font-size: 18px;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    .scrolling-lyrics p {
+      display: inline-block;
+      padding-right: 100%;
+      animation: scroll 120s linear infinite;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    @-webkit-keyframes scroll {
+      from {
+        transform: translateX(100%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+
+    @-webkit-keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -10000px -10000px; }
+    }
+
+  </style>
 </head>
 <body>
 
 <div class="shaper">
-  <h1>PADYSAK</h1>
-  <h2>je himvesszo</h2>
-</div>
-
-</body>
-</html>
+  <h1>PADYSAK</
